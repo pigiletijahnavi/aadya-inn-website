@@ -58,7 +58,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-temple-gold/10 to-transparent -translate-x-full animate-[shimmer_2s_infinite]" />
               </div>
               <img
-                src="/addyainn/logo.png"
+                src="/logo.png"
                 alt="Aadya Inn Tirupati Logo"
                 className="w-full h-full object-contain"
               />

@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 py-1 pointer-events-auto pl-8">
           <div className="relative w-10 h-10">
             <img
-              src="/addyainn/logo.png"
+              src="/logo.png"
               alt="Aadya Inn Logo"
               className="w-full h-full object-contain"
             />

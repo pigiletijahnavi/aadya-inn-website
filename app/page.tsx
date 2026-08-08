@@ -20,7 +20,7 @@ import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import { Star, ChevronDown, MapPin } from "lucide-react";
 
-const BASE_PATH = "/addyainn";
+const BASE_PATH = "";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
