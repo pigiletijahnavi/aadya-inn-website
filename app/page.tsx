@@ -20,6 +20,8 @@ import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import { Star, ChevronDown, MapPin } from "lucide-react";
 
+const BASE_PATH = "/addyainn";
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [activeBg, setActiveBg] = useState<string>("video");
@@ -94,14 +96,14 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: (activeBg === "video" || activeBg === "contact") ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/vekateswara_swami_video.mp4" showVolumeToggle={activeBg === "video"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/vekateswara_swami_video.mp4`} showVolumeToggle={activeBg === "video"} />
             </div>
 
             {/* Background 2: Scene 4 Journey Mountains Image */}
             <div
               className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
               style={{
-                backgroundImage: "url('/tirumala_road.png')",
+                backgroundImage: `url('${BASE_PATH}/tirumala_road.png')`,
                 opacity: (activeBg === "hills" || activeBg === "guide" || activeBg === "reviews") ? 1 : 0,
               }}
             />
@@ -116,7 +118,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: (activeBg === "entrance" || activeBg === "reception" || activeBg === "lobby" || activeBg === "rooms") ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/hotel_entrance.mp4" showVolumeToggle={activeBg === "entrance" || activeBg === "reception" || activeBg === "lobby"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/hotel_entrance.mp4`} showVolumeToggle={activeBg === "entrance" || activeBg === "reception" || activeBg === "lobby"} />
             </div>
 
             {/* Background 4: Exterior Drone Video */}
@@ -124,7 +126,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: activeBg === "drone" ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/hotel_drone.mp4" showVolumeToggle={activeBg === "drone"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/hotel_drone.mp4`} showVolumeToggle={activeBg === "drone"} />
             </div>
 
             {/* Background 5: Queen Room Video */}
@@ -132,7 +134,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: activeBg === "queen" ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/room_showcase_1.mp4" showVolumeToggle={activeBg === "queen"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/room_showcase_1.mp4`} showVolumeToggle={activeBg === "queen"} />
             </div>
 
             {/* Background 6: King Room Video */}
@@ -140,7 +142,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: activeBg === "king" ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/room_showcase_2.mp4" showVolumeToggle={activeBg === "king"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/room_showcase_2.mp4`} showVolumeToggle={activeBg === "king"} />
             </div>
 
             {/* Background 7: Suite Room Video */}
@@ -148,7 +150,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: activeBg === "suite" ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/room_walkthrough.mp4" showVolumeToggle={activeBg === "suite"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/room_walkthrough.mp4`} showVolumeToggle={activeBg === "suite"} />
             </div>
 
             {/* Background 8: Peaceful Stay Video */}
@@ -156,7 +158,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out"
               style={{ opacity: activeBg === "peaceful" ? 1 : 0 }}
             >
-              <BackgroundVideo videoSrc="/room_showcase_1.mp4" showVolumeToggle={activeBg === "peaceful"} />
+              <BackgroundVideo videoSrc={`${BASE_PATH}/room_showcase_1.mp4`} showVolumeToggle={activeBg === "peaceful"} />
             </div>
           </div>
 

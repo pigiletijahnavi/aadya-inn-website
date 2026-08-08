@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Phone, MapPin, Mail, MessageSquare, Clock, ArrowUp } from "lucide-react";
-import Image from "next/image";
 
 export default function Contact() {
   const whatsappNumber = "919121314009";
@@ -181,7 +180,11 @@ export default function Contact() {
           {/* Logo & Branding */}
           <div className="flex items-center gap-3">
             <div className="relative w-9 h-9">
-              <Image src="/logo.png" alt="Aadya Inn Logo" fill className="object-contain" />
+              <img
+                src="/addyainn/logo.png"
+                alt="Aadya Inn Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="font-display font-semibold tracking-widest text-temple-gold text-base">
               AADYA INN

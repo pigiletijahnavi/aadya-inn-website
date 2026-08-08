@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Menu, X, Phone, Calendar } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -30,11 +29,10 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3 py-1 pointer-events-auto pl-8">
           <div className="relative w-10 h-10">
-            <Image
-              src="/logo.png"
+            <img
+              src="/addyainn/logo.png"
               alt="Aadya Inn Logo"
-              fill
-              className="object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
           <span className="font-display font-semibold tracking-widest text-temple-gold text-lg hidden sm:inline-block">

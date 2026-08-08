@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -58,12 +57,10 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               <div className="absolute inset-0 w-full h-full overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-temple-gold/10 to-transparent -translate-x-full animate-[shimmer_2s_infinite]" />
               </div>
-              <Image
-                src="/logo.png"
+              <img
+                src="/addyainn/logo.png"
                 alt="Aadya Inn Tirupati Logo"
-                fill
-                priority
-                className="object-contain"
+                className="w-full h-full object-contain"
               />
             </motion.div>
 
